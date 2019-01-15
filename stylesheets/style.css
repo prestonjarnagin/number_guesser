@@ -1,0 +1,54 @@
+html, body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title-box{
+  font-size: 45px;
+  background-color: #404041;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#myform{
+  display: none;
+}
+
+#title-number{
+  color: #ED458B;
+  font-weight: 900;
+}
+
+#title-guesser{
+  color: #E6E7E8;
+  font-weight: 300;
+}
+
+.button{
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  background-color: #929497;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+}
+
+.enabled-button:hover { background-color: #EB008B; }
+
+.guess-box{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.disabled-button{
+  background-color: #D0D2D3
+}
+
+
+#last-guess-display{
+  color: #EB008B;
+}

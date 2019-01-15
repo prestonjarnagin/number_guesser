@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Number Guesser</title>
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+
+  <body>
+    <div class="title-box">
+      <span id=title-number class="title-word">Number</span>&nbsp<span id="title-guesser" class="title-word">  Guesser</span>
+    </div>
+
+    <form name="range" id="range-form">
+      Enter A Range to Get Started
+      <input id="min-range-entry" type='text' placeholder="Minimum"/>
+      <input id="max-range-entry" type='text' placeholder="Maximum"/>
+      <a href="javascript: validateRange()" class="button enabled-button" id="range-button">Begin</a>
+      <p id="range-error-message"></p>
+    </form>
+
+    <form name="myform" id="myform">
+      <input id="number" type='text' placeholder="Enter Your Guess" class="guess-box" onkeyup="validateInput()" />
+      <a href="" class="button disabled-button" id="guess-button">Guess</a>
+      <a href="" class="button disabled-button" id="clear-button">Clear</a>
+
+      <div id=last-guess-header>
+        Your last guess was
+      </div>
+      <div id="last-guess-display">
+
+      </div>
+      <div id="guess-feedback">
+
+      </div>
+      <a href="" class="button disabled-button" id="reset-button">Reset Game</a>
+      <div id="guess-range-feedback">
+        
+      </div>
+    </form>
+
+
+
+
+    <script src="scripts/main.js"></script>
+
+  </body>
+</html>
