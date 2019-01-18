@@ -4,7 +4,7 @@ html, body{
   font-family: 'Open Sans', sans-serif;
 }
 
-.title-box{
+header{
   font-size: 45px;
   background-color: #404041;
   width: 100%;
@@ -34,6 +34,13 @@ html, body{
 
 #game-form{
   display: none;
+  /* display: grid; */
+  grid-template-rows: auto, auto, 50vh, auto;
+  grid-row-gap: 10px;
+}
+
+.guess-container{
+  justify-content: center;
 }
 
 #title-number{
@@ -45,6 +52,17 @@ html, body{
   color: #E6E7E8;
   font-weight: 300;
 }
+
+#range-form{
+  display: grid;
+  grid-template-rows: 50px, 50px, 50px;
+  grid-row-gap: 10px;
+}
+
+#range-button{
+  justify-self: center;
+}
+
 
 .button{
   display: inline-block;
@@ -58,9 +76,28 @@ html, body{
 
 .enabled-button:hover { background-color: #EB008B; }
 
-.guess-box{
-  margin-left: 50%;
-  margin-right: 50%;
+.guess-container{
+  grid-row-start: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.guess-submit-container{
+  grid-row-start: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.guess-feedback-window{
+  grid-row-start: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.game-reset-container{
+  grid-row-start: 4;
+  display: flex;
+  justify-content: center;
 }
 
 .disabled-button{
