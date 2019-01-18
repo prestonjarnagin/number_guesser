@@ -13,7 +13,26 @@ html, body{
   align-items: center;
   justify-content: center;
 }
-#myform{
+
+.game-window{
+  display: grid;
+  grid-template-rows: 140px 100px auto;
+}
+
+.range-direction{
+  text-align: center;
+  grid-row-start: 1;
+  margin: 5px;
+}
+
+.range-field-container{
+  grid-row-start: 2;
+  display: flex;
+  justify-content: center;
+}
+
+
+#game-form{
   display: none;
 }
 

@@ -15,7 +15,7 @@ function getRandomNumber()
 
 function resetForm()
 {
-  document.getElementById('myform').reset();
+  document.getElementById('game-form').reset();
   guessButton = document.getElementById("guess-button")
   clearButton = document.getElementById("clear-button")
 
@@ -132,7 +132,7 @@ function validateRange(){
     document.getElementById("range-error-message").innerText = ""
 
     document.getElementById("range-form").style.display = "none";
-    document.getElementById("myform").style.display = "block";
+    document.getElementById("game-form").style.display = "block";
 
     randomNumber = getRandomNumber()
   }
