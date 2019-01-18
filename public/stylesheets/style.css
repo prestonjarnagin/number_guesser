@@ -24,7 +24,6 @@ header{
   grid-row-start: 1;
   margin: 5px;
 }
-
 .range-field-container{
   grid-row-start: 2;
   display: flex;
