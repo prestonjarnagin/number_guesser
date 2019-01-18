@@ -3,11 +3,14 @@ var incorrect = 0;
 var min = 0;
 var max = 100;
 var randomNumber
+// pry = require('pryjs')
+// eval(pry.it)
 
 function getRandomNumber()
 {
   min = Math.ceil(min);
   max = Math.floor(max);
+
   rand =  Math.floor(Math.random() * (max - min + 1)) + min;
   console.log(rand)
   return rand
@@ -78,7 +81,7 @@ function guessedCorrectNumber(){
 }
 
 function guessedOutOfRange(){
-  document.getElementById("guess-feedback").innerText = "That number is out of range. Please enter a number between 1 and 100";
+  document.getElementById("guess-feedback").innerText = "That number is out of range. Please enter a number between " + min + " and " + max;
 }
 
 function guessedNaN(){
@@ -133,10 +136,11 @@ function validateRange(){
 
     document.getElementById("range-form").style.display = "none";
     document.getElementById("game-form").style.display = "block";
+    document.getElementById("guess-range-feedback").innerText = "Current Min: " + min + " \n " + "Current Max: " + max;
+
 
     randomNumber = getRandomNumber()
   }
-
 }
 
 function increaseRange(){
